@@ -1,0 +1,12 @@
+name: Day4 PR Hello
+
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  pr_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello on PR
+        run: echo "This PR triggered GitHub Actions!"
